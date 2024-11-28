@@ -4,6 +4,7 @@ import PasswordContainer from "./components/PasswordContainer";
 import RangeInput from "./components/RangeInput";
 import Checkbox from "./components/Checkbox";
 import Button from "./components/Button";
+import StrengthContainer from "./components/StrengthContainer";
 
 const Container = styled.div`
   display: flex;
@@ -33,6 +34,7 @@ function App() {
         <MainDiv>
           <RangeInput />
           <Checkbox />
+          <StrengthContainer />
           <Button />
         </MainDiv>
       </Container>
