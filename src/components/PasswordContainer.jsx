@@ -1,17 +1,26 @@
 import styled from "styled-components";
 
 const StyledPasswordContainer = styled.div`
-  background-color: #24222a;
-  width: 80%;
   display: flex;
-  justify-content: space-between;
+  width: 80%;
+  background-color: #24222a;
 `;
 
-const Text = styled.p`
+const StyledInput = styled.input`
+  display: flex;
+  width: 90%;
+  background-color: #24222a;
   color: #4a4951;
   font-weight: bold;
   font-size: 26px;
-  padding: 0 1em;
+  border: none;
+
+  &::placeholder {
+    color: #4a4951;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 0 0.75rem;
+  }
 `;
 
 const Image = styled.image`
@@ -22,7 +31,7 @@ const Image = styled.image`
 function PasswordContainer() {
   return (
     <StyledPasswordContainer>
-      <Text>P4$5W0rD!</Text>
+      <StyledInput type="text" placeholder="P4$5W0rD!" />
       <Image>
         <svg width="21" height="24" xmlns="http://www.w3.org/2000/svg">
           <path
